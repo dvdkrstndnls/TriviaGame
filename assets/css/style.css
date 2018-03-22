@@ -4,17 +4,27 @@
 
 /* do text align probly */
 
-
+.w3-container {
+    background-color: azure;
+    margin-left: 7%;
+    margin-right: 7%;
+}
 
 
 body {
     text-align: center;
     font-size: 200%;
     background: linear-gradient(to right, rgb(21, 228, 45) , rgb(154, 154, 105));
-    background-image: url("moneystacks.png");
+    background-image: url('../images/moneystacks.png');
+    /* background-repeat: width: 100%; */
+}
+
+img {
+    width: 100%;
 }
 header {
-    font-size: 300%;
+    background-color: darkgray;
+    font-size: 200%;
 }
 
 h1 {
@@ -33,5 +43,11 @@ h2 {
     font-size: 100%;
     font-style: underline;
     
+}
+
+footer {
+    font-size: 65%;
+    background-color: gray;
+    padding: 10px;
 }
 /* play game at : https://dvdkrstndnls.github.io/TriviaGame/ */
