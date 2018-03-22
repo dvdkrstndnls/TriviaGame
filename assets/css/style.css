@@ -5,9 +5,10 @@
 /* do text align probly */
 
 .w3-container {
-    background-color: azure;
+    background-color: rgb(238, 239, 240);
     margin-left: 7%;
     margin-right: 7%;
+    padding: 2%;
 }
 
 
@@ -34,9 +35,15 @@ h1 {
 }
 
 p {
-    font-size: 90%;
-    font-weight: bold;
+    line-height: 1.3em;
+    text-align: left;
+    font-size: 70%;
+    /* font-weight: bold; */
     
+}
+
+.answers {
+    font-size: 60%;
 }
 
 h2 {
