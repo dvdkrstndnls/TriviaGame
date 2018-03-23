@@ -12,6 +12,7 @@
 }
 
 
+
 body {
     text-align: center;
     font-size: 200%;
@@ -35,6 +36,7 @@ h1 {
 }
 
 p {
+    /* display: none; */
     line-height: 1.3em;
     text-align: left;
     font-size: 60%;

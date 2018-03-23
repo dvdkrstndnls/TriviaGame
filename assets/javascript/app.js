@@ -1,56 +1,66 @@
 // # TriviaGame
-// * create a trivia form with multiple choice 
-
-
-//Don't let the player pick more than one answer per question.
-
+// * create a trivia form with multiple choice DONE html
+//Don't let the player pick more than one answer per question. DONE html
 //Don't forget to include a countdown timer.
 
-  //  Variable that will hold the button alert's timeout when it is clicked.
-  var delayButtonAlert;
+//   //  Variable that will hold the button alert's timeout when it is clicked.
 
-  //  Timeouts in JavaScript
-  //  Set our window alert to run one second after the function's called.
+
+var delayButtonAlert;
+
+var displayResult;
+// //    Timeouts in JavaScript
+// //    Set our window alert to run one second after the function's called.
 //   var windowTimeout = setTimeout(function() {
 //     alert("The Game Begins!");
-//     $(document).ready(function(){
-//         $("#hide").click(function(){
-//             $("p").hide();
-//         });
-//         $("#show").click(function(){
-//             $("p").show();
-//         });
-//     });
+//     $('#time-left').html = ;
+//         // $(document).ready(function(){
+//         //     $("#hide").click(function(){
+//         //         $("p").hide();
+//         //     });
+//         //     $("#show").click(function(){
+//         //         $("p").show();
+//         //     });
+//         // });
 //   }, 1000);
 
 //   //  Start on click.
 //   $("#start").on("click", function() {
+    document.getElementById("start").addEventListener("click", myFunction);
+
+    function myFunction() {
+        document.getElementById("start").innerHTML = "YOU CLICKED ME!";
+    }
     
+    var seconds_left = 30;
+    var interval = setInterval(function() {
+        document.getElementById('timer_div').innerHTML = --seconds_left;
     
+        if (seconds_left <= 0)
+        {
+           document.getElementById('timer_div').innerHTML = "Times Up!";
+           clearInterval(interval);
+        }
+    }, 1000);
     
-//     //  Set the button alert's timeout to run three seconds after the function's called.
-//     delayButtonAlert = setTimeout(function() {
-//       alert("Your time is up!");
-//     }, 3000);
-//   });
-
-
-setTimeout(timeUp, 1000 * 15);
-
-function timeUp() {
-
-    // in the element with an id of time-left add an h2 saying Time's Up!
-    // console log done
-    console.log("done");
-    $("#time-left").append("<h2>Time's Up!</h2>");
-    console.log("time is up");
   
-   
-
+// }
  //The player will have a limited amount of time to finish the quiz. 
 
 //The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
     
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
