@@ -1,5 +1,5 @@
 <!-- play game at : https://dvdkrstndnls.github.io/TriviaGame/ -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -8,114 +8,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="assets/javascript/app.js"></script>
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script> -->
 
 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UBI Trivia Game</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Geo' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <!-- jQuery link goes here -->
+
 
     <!-- use solved homework solutions to create this? -->
-<header>Considering Universal Basic Income: <br>[A Trivia Game]</header>
-<br>
-<br>
-<br>
-<br>
+    <header>Considering Universal Basic Income: <br>[A Trivia Game]</header>
+    <br>
+    <br>
+    <br>
+    <br>
 
-<div class="w3-container w3-white">
-<button onclick="displayResult()">  <h1 id="start"></h1>Start Trivia Game</h1> </button>
-<h2 id="demo">Click me.</h2>
-<br>
-<br>
-<br>
-<br>
-
-<!-- <button id="cancel">Button Timeout Cancel</button> -->
-
-<!-- the below will not display until Start is pressed -->
-<!-- this counter will count down to zero and display as it goes -->
-<h1><div id="timer-div"></div>Seconds Left: </h1>
-<div id="timer_div"></div>
-
-<br> 
-
-<p class="question">1. Globally, Robot-to-Worker ratios are rising rapidy in factories around the world. In 2017, per every 100 US workers there were...?</p>        
-
-<ul class="answers">            
-<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">50 robots  </label>          
-<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">0.0000067 robots   </label>           
-<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">1.64 robots    </label>            
-<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">10 robots</label>       
-</ul>        
-<br>
-<p class="question">2. As their numbers grow, the cost of robots' implementation...?</p>        
-
-<ul class="answers">            
-<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">grows in lock step</label><br/>           
-<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">shrinks</label><br/>            
-<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">stays the same</label><br/>           
-<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">has no relation to their number</label><br/>       
-</ul> 
-<br>
-<p class="question">3. The Developing World is most at risk. For example in Ethiopia, what percantage of jobs are at risk of being automated?</p>
-      
-<ul class="answers">            
-<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">5%</label>            
-<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">100%</label>           
-<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">34%</label>           
-<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">88%</label>       
-</ul>        
-
-
-<br>
-<p class="question">4. The Developed World is not much better off. The percentage of jobs in Houston, TX at risk of being automated is...?</p>    
-
-<ul class="answers">           
-<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">92.35%</label>            
-<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">3.7%</label>           
-<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">45.8%</label>           
-<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">10.2%</label>      
-</ul>        
-
-
-<br>
-<p class="question">5.The problem is bigger than manufacturing. The liklihood of an Insurance Underwriting job being automated is...?</p>
-       
-<ul class="answers">            
-<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">99%</label>           
-<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">72%</label>            
-<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">46%</label>          
-<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">1%</label>       
-</ul> 
-
-
-<br>
-<!-- this is a DONE click box -->
-    <div class="w3-container w3-white">
-        <h1 id="results">?</h1>
-        <button onclick="displayResult()">  DONE </button>
+  <div id="wrapper">
+    <!-- <h1>UBI Trivia Game</h1> -->
+    <div id="subwrapper">
+      <div id="quiz-area">
+        <button id="start">Start</button>
+      </div>
     </div>
-
-<!-- to be displayed after clicking done -->
-Ok, you're all done!
-
-<h2>Correct Answers: 0</h2>
-<h2>Incorrect Answers: 0</h2>
-<h2>Unanswered: 0</h2>
-</div>
-
-
-<br>
-<br>
-<br>
-<br>
-
+  </div>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 <footer>// *These questions were adapted from an article from <a href="https://futurism.com/images/universal-basic-income-answer-automation/">Futurism</a>. // Web Design by <a href="https://dvdkrstndnls.github.io/Portfolio/">DKD</a>. //</footer>
 <!-- javascript link goes here -->
 </body>
 </html>
+
 <!-- play game at : https://dvdkrstndnls.github.io/TriviaGame/ -->
+
+
+
+
