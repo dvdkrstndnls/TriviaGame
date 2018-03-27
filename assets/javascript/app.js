@@ -122,7 +122,8 @@ var game = {
     for (var i = 0; i < questions.length; i++) {
       panel.append('<h2>' + questions[i].question + '</h2>');
       for (var j = 0; j < questions[i].answers.length; j++) {
-        panel.append('<input type="radio" name="question' + '-' + i + '" value="' + questions[i].answers[j] + '">' + questions[i].answers[j]);
+        panel.append('<input type="radio" name="question' + '-' + i + '" value="' + questions[i].answers[j] + '">');
+        panel.append('<label for="question-' + i + '">' + questions[i].answers[j] + '</label>')
       }
     }
 

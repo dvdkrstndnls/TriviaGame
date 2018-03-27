@@ -30,6 +30,10 @@ header {
     font-size: 150%;
 }
 
+label{
+    font-size: 50%;
+}
+
 h1 {
     font-size: 90%;
     font-weight: bold;
@@ -64,7 +68,7 @@ h2 {
 
 #done {
     clear:both;
-    font-size: 800%;
+    font-size: 300%;
     background-color: gray;
     padding: 10px;
     margin-bottom: 130%;
