@@ -8,6 +8,7 @@
     background-color: rgb(238, 239, 240);
     margin-left: 10%;
     margin-right: 7%;
+    margin-bottom: 7%;
     padding: 2%;
 }
 
@@ -30,7 +31,7 @@ header {
 }
 
 h1 {
-    font-size: 110%;
+    font-size: 90%;
     font-weight: bold;
     
 }
@@ -52,6 +53,21 @@ h2 {
     font-size: 70%;
     font-style: underline;
     
+}
+
+#start {
+    clear:both;
+    font-size: 200%;
+    background-color: gray;
+    padding: 10px;
+}
+
+#done {
+    clear:both;
+    font-size: 800%;
+    background-color: gray;
+    padding: 10px;
+    margin-bottom: 130%;
 }
 
 footer {
